@@ -1,0 +1,39 @@
+html, body, ul, li, h1{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.title{
+    font-size: 20px;
+}
+
+.body:after{
+    content: attr(data-length);
+}
+
+.letter{
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+}
+
+.letter:focus{
+    outline: 0;
+}
+
