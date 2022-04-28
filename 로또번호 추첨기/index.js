@@ -24,8 +24,8 @@ $lever.addEventListener('click', function(e){
     for(let i =0; i<6; i++){
         document.querySelector(".lotto").childNodes[i*2+1].classList.remove("bounce");
         document.querySelector(".lotto").childNodes[i*2+1].classList.add("bounce");
-        document.querySelector(".lotto").childNodes[i*2+1].style.transform = "translateY(250px)"        
-        document.querySelector(".lotto").childNodes[i*2+1].style.backgroundColor = "#fafad2"
+        document.querySelector(".lotto").childNodes[i*2+1].style.transform = "translateY(250px)"    
+        document.querySelector(".lotto").childNodes[i*2+1].style.backgroundColor = `rgb(${255-lotto[i]}, ${255-lotto[i]*3}, ${lotto[i]*4})`
     }
     for(let i =0; i<6; i++){
         document.querySelector(".lotto").childNodes[i*2+1].textContent = lotto[i]

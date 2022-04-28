@@ -76,6 +76,7 @@ ul{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    perspective: 500px;
 }
 
 .ball{
@@ -89,8 +90,28 @@ ul{
     align-items: center;
     font-size: 60px;
     margin-bottom: 500px;
-    transition: all 2s ease-in-out, transform 2s step-end;
     box-shadow: inset -6px -6px 8px 1px rgb(123 123 123);
+    transition: all 2s ease-in-out, transform 2s step-end;
+}
+
+.ball:nth-child(2){
+    animation-delay: 0.1s;
+}
+
+.ball:nth-child(3){
+    animation-delay: 0.2s;
+}
+
+.ball:nth-child(4){
+    animation-delay: 0.3s;
+}
+
+.ball:nth-child(5){
+    animation-delay: 0.4s;
+}
+
+.ball:nth-child(6){
+    animation-delay: 0.5s;
 }
 
 @-webkit-keyframes bounce {

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body{
+    text-align: center;
+    padding: 0 25rem;
+}
+
+.title{
+    padding: 5rem;
+}
+
+.calendar_head{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.previous_month{
+    font-size: 3rem;
+    border: none;
+    background-color: white;
+    font-weight: 900;
+}
+
+.next_month{
+    font-size: 3rem;
+    border: none;
+    background-color: white;
+    font-weight: 900;
+}
+
+.year_month{
+    padding: 0 3rem;
+    font-size: 4rem;
+    margin-top: 0.25rem;
+}
+
+.week{
+    font-family: 'Jua', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 50px;
+    align-items: center;
+}
+
+.sun{
+    color: red;
+}
+
+.sat{
+    color: blue;
+}
+
+.date{
+    padding: 20px;
+}
